@@ -144,7 +144,7 @@ const Hero = () => {
         const userId = localStorage.getItem('userId');
         if (!userId || userId === 'undefined') return;
 
-        const res = await axios.get(`http://127.0.0.1:5000/api/v1/recommendations?userId=${userId}`, {
+        const res = await axios.get(`http://ai-expense-event-tracker.onrender.com/api/v1/recommendations?userId=${userId}`, {
           headers: { Authorization: `Bearer ${token}` }
         });
         setRecommendations(res.data);
@@ -161,7 +161,7 @@ const Hero = () => {
     setSearchQuery(value);
     if (value.length > 1) {
       try {
-        const res = await axios.get(`http://127.0.0.1:5000/api/v1/search?query=${value}`);
+        const res = await axios.get(`http://ai-expense-event-tracker.onrender.com/api/v1/search?query=${value}`);
         setSearchResults(res.data);
       } catch (err) {
         console.error("Search Error:", err);

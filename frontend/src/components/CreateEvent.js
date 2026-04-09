@@ -129,7 +129,7 @@ const CreateEvent = () => {
 
       console.log("🤖 Sending Prompt:", promptText);
 
-      const aiResponse = await axios.post('http://localhost:5000/api/v1/generate-schedule', 
+      const aiResponse = await axios.post('http://ai-expense-event-tracker.onrender.com/api/v1/generate-schedule', 
         { prompt: promptText },
         { headers: { Authorization: `Bearer ${token}` } }
       );
