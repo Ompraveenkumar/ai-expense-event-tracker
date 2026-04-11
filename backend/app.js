@@ -16,6 +16,14 @@ app.use(cors({
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 
+app.use((req, res, next) => {
+    res.setHeader(
+        "Content-Security-Policy",
+        "connect-src 'self' https://ai-expense-event-tracker.onrender.com"
+    );
+    next();
+});
+
 // 🛡️ ROUTES CONFIGURATION
 // We explicitly define the /auth prefix to match your frontend axios calls
 app.use('/api/v1/auth', require('./routes/auth')); 
