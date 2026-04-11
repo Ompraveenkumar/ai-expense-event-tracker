@@ -129,7 +129,7 @@ const CreateEvent = () => {
 
       console.log("🤖 Sending Prompt:", promptText);
 
-      const aiResponse = await axios.post('http://ai-expense-event-tracker.onrender.com/api/v1/generate-schedule', 
+      const aiResponse = await axios.post('https://ai-expense-event-tracker.onrender.com/api/v1/generate-schedule', 
         { prompt: promptText },
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -138,7 +138,7 @@ const CreateEvent = () => {
       console.log("✅ AI Schedule Received:", generatedSchedule);
 
       // 🛡️ Sending data to Backend - 'category' will now properly map to MongoDB
-      await axios.post('http://localhost:5000/api/v1/add-event', 
+      await axios.post('https://localhost:5000/api/v1/add-event', 
         { ...formData, ai_schedule: generatedSchedule },
         { headers: { Authorization: `Bearer ${token}` } }
       );
