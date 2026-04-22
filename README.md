@@ -1,80 +1,69 @@
-# 🤖 AI-Powered Event & Expense Tracker
-
-## 🌐 Live Demo
-
-https://ai-expense-tracker-frontend-g94f.onrender.com
+# <p align="center">🤖 AI-Powered Event Planner</p>
 
 ---
 
-## 🚀 Overview
+## <h2 align="left"><font color="#007ACC">🌐 Live Production Links</font></h2>
 
-A full-stack AI-powered platform that helps manage college events and track expenses with predictive insights.
-Designed to simplify event planning and provide smart financial analysis.
-
----
-
-## ✨ Features
-
-* 📅 Event creation and management
-* 💰 Expense tracking and categorization
-* 🤖 Predictive insights using AI
-* 📊 Dashboard with analytics
-* 🔐 User authentication
+> **Frontend Dashboard:** [https://ai-event-planner-frontend.onrender.com](https://ai-event-planner-frontend.onrender.com)  
+> **Backend API:** [https://ai-event-planner-backend-6t4n.onrender.com](https://ai-event-planner-backend-6t4n.onrender.com)
 
 ---
 
-## 🛠 Tech Stack
+## <h2 align="left"><font color="#007ACC">🚀 Project Overview</font></h2>
 
-* **Frontend:** React, HTML, CSS, JavaScript
-* **Backend:** Node.js, Express / FastAPI
-* **Database:** MongoDB / PostgreSQL
-* **Deployment:** Render
+The AI-Powered Event Planner is a sophisticated full-stack platform designed to automate event logistics through **Predictive Neural Insights**. By integrating the **Google Gemini API**, the application analyzes user interests to generate optimized event schedules, themes, and descriptions in real-time.
 
 ---
 
-## 📂 Project Structure
+## <h2 align="left"><font color="#007ACC">✨ Core Features</font></h2>
 
-```
-frontend/   → UI (React)
-backend/    → API & server
-```
-
----
-
-## ⚙️ Installation
-
-```bash
-git clone https://github.com/Ompraveenkumar/ai-expense-event-tracker.git
-cd ai-expense-event-tracker
-```
-
-### Backend
-
-```bash
-cd backend
-npm install
-npm start
-```
-
-### Frontend
-
-```bash
-cd frontend
-npm install
-npm start
-```
+* 🆔 **Neural Identity System:** Secure user authentication with hashed passwords and JWT.
+* 🧠 **AI Event Generation:** Leverages Gemini AI to suggest event details based on user interests.
+* ⚡ **Real-time Management:** Create, update, and track events with a sleek, futuristic UI.
+* 📱 **Responsive Design:** Fully optimized for all devices using Framer Motion and Styled Components.
 
 ---
 
-## 📈 Future Improvements
+## <h2 align="left"><font color="#007ACC">🛠️ Technical Tech Stack</font></h2>
 
-* Advanced AI recommendations
-* Real-time collaboration
-* Mobile app version
+* **Frontend:** React.js, Styled Components, Framer Motion, Axios
+* **Backend:** Node.js, Express.js
+* **Database:** MongoDB Atlas (NoSQL)
+* **AI Engine:** Google Gemini AI
+* **Deployment:** Render (Frontend & Backend)
 
 ---
 
-## 👨‍💻 Author
+## <h2 align="left"><font color="#007ACC">📋 API Endpoints</font></h2>
 
-Om Praveen Kumar
-📧 [ompraveenkumard@gmail.com](mailto:ompraveenkumard@gmail.com)
+### **Authentication**
+* `POST /api/v1/auth/signup` - Registers a new Neural Identity.
+* `POST /api/v1/auth/login` - Authenticates user and returns JWT.
+
+### **Events Management**
+* `GET /api/v1/events` - Fetches all AI-generated events.
+* `POST /api/v1/events` - Creates a new event entry.
+
+---
+
+## <h2 align="left"><font color="#007ACC">🔧 Installation & Local Setup</font></h2>
+
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Ompraveenkumar/ai-event-planner.git](https://github.com/Ompraveenkumar/ai-event-planner.git)
+2.Setup Environment Variables:
+Create a .env file in the backend folder:
+
+Code snippet
+PORT=5000
+MONGO_URL=your_mongodb_uri
+GEMINI_API_KEY=your_api_key
+JWT_SECRET=your_secret_key
+
+3.Install Dependencies & Start:
+
+Backend:
+cd backend && npm install && npm start
+
+Frontend:
+cd frontend && npm install && npm start
