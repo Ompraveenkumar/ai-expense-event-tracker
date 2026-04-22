@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 // Updated CORS to allow your specific live frontend
 app.use(cors({
-    origin: "https://ai-powered-event-planner.onrender.com",
+    origin: "https://ai-event-planner-frontend.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
