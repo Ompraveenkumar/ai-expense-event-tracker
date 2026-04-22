@@ -19,7 +19,7 @@ app.use(cors({
 app.use((req, res, next) => {
     res.setHeader(
         "Content-Security-Policy",
-        "connect-src 'self' https://ai-event-planner-backend.onrender.com"
+        "connect-src 'self' https://ai-event-planner-backend-6t4n.onrender.com"
     );
     next();
 });

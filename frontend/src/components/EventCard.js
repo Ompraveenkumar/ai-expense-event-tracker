@@ -66,7 +66,7 @@ const EventCard = ({ event, onDelete }) => {
     const handleDelete = async () => {
         if (window.confirm(`Are you sure you want to delete "${event.title}"?`)) {
             try {
-                await axios.delete(`https://ai-event-planner-backend.onrender.com/api/v1/delete-event/${event._id}`);
+                await axios.delete(`https://ai-event-planner-backend-6t4n.onrender.com/api/v1/delete-event/${event._id}`);
                 if (onDelete) onDelete(event._id); 
             } catch (err) {
                 console.error("Delete failed", err);

@@ -153,7 +153,7 @@ const Login = () => {
 
     if (formValues) {
       try {
-        await axios.post('https://ai-event-planner-backend.onrender.com/api/v1/auth/signup', formValues);
+        await axios.post('https://ai-event-planner-backend-6t4n.onrender.com/api/v1/auth/signup', formValues);
         Swal.fire({ 
           icon: 'success', 
           title: 'Identity Created!', 
@@ -176,7 +176,7 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://ai-event-planner-backend.onrender.com/api/v1/auth/login', { email, password });
+      const res = await axios.post('hhttps://ai-event-planner-backend-6t4n.onrender.com/api/v1/auth/login', { email, password });
       
       // 🚀 NEURAL HANDSHAKE: Save token AND userId for AI matching
       localStorage.setItem('token', res.data.token);

@@ -36,7 +36,7 @@ const EventsList = () => {
         const token = localStorage.getItem('token');
 
         // 🛡️ Pass the token in the Authorization header
-        const res = await axios.get('https://ai-event-planner-backend.onrender.com/api/v1/get-events', {
+        const res = await axios.get('https://ai-event-planner-backend-6t4n.onrender.com/api/v1/get-events', {
           headers: {
             Authorization: `Bearer ${token}`
           }
