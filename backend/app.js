@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 // Updated CORS to allow your specific live frontend
 app.use(cors({
-    origin: "https://ai-expense-tracker-frontend-g94f.onrender.com",
+    origin: "https://ai-powered-event-planner.onrender.com",
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
@@ -19,7 +19,7 @@ app.use(cors({
 app.use((req, res, next) => {
     res.setHeader(
         "Content-Security-Policy",
-        "connect-src 'self' https://ai-expense-event-tracker.onrender.com"
+        "connect-src 'self' https://ai-event-planner-backend.onrender.com"
     );
     next();
 });
